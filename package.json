@@ -1,0 +1,26 @@
+{
+  "name": "highqa-docs",
+  "version": "1.0.0",
+  "description": "High QA 云真机测试平台官方文档",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "mobile testing",
+    "cloud testing",
+    "automation",
+    "vue",
+    "vitepress"
+  ],
+  "author": "High QA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.36"
+  },
+  "dependencies": {
+    "vue": "^3.3.8"
+  }
+} 
