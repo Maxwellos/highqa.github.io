@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'High QA',
   description: '云真机测试平台官方文档',
   lang: 'zh-CN',
-  base: '/',
+  base: '/highqa.github.io/',
   
   // 启用暗色模式切换
   appearance: 'dark',
