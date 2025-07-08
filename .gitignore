@@ -5,8 +5,8 @@ node_modules/
 .pnp.*
 
 # 构建输出
-dist/
-docs/.vitepress/dist/
+# dist/
+# docs/.vitepress/dist/
 docs/.vitepress/cache/
 
 # 环境变量
