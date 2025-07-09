@@ -74,6 +74,26 @@
     opacity: 0.8;
 }
 
+/* 英雄区域图片优化 */
+.VPHero .image {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.VPHero .image img {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: var(--panda-shadow-md);
+    border-radius: var(--panda-radius-lg);
+    transition: all 0.3s ease;
+}
+
+.VPHero .image img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--panda-shadow-lg);
+}
+
 /* 按钮样式 - 熊猫主题 */
 .VPButton {
     border-radius: var(--panda-radius-lg) !important;
@@ -164,6 +184,8 @@
     border-radius: 50%;
     box-shadow: var(--panda-shadow-sm);
     transition: all 0.3s ease;
+    background: transparent !important;
+    border: none !important;
 }
 
 .VPNavBarTitle .logo:hover {
@@ -208,6 +230,40 @@
     box-shadow: var(--panda-shadow-sm);
 }
 
+/* 图片样式优化 - 熊猫主题 */
+.VPDoc img {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: var(--panda-shadow-md);
+    border-radius: var(--panda-radius-md);
+    transition: all 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.VPDoc img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--panda-shadow-lg);
+}
+
+/* 图片容器优化 */
+.VPDoc p img {
+    display: block;
+    margin: 1.5rem auto;
+    background: transparent !important;
+}
+
+/* 图片描述文字样式 */
+.VPDoc p:has(img)+p {
+    text-align: center;
+    color: var(--panda-gray);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+}
+
 /* 标题样式 - 熊猫主题 */
 .VPDoc h1 {
     color: var(--panda-black);
@@ -239,11 +295,13 @@
     border: 1px solid var(--panda-light-gray);
     box-shadow: var(--panda-shadow-sm);
     margin: 1rem 0;
+    background: transparent !important;
 }
 
 .VPDoc pre {
     border-radius: var(--panda-radius-md);
     padding: 1.5rem;
+    background: transparent !important;
 }
 
 /* 行内代码 */
@@ -272,6 +330,7 @@
     overflow: hidden;
     box-shadow: var(--panda-shadow-sm);
     margin: 1rem 0;
+    background: var(--panda-white);
 }
 
 .VPDoc th {
@@ -284,6 +343,7 @@
 .VPDoc td {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--panda-light-gray);
+    background: var(--panda-white);
 }
 
 .VPDoc tr:nth-child(even) {
@@ -355,6 +415,10 @@
     .VPNavBar {
         margin: 0.25rem 0.5rem;
     }
+
+    .VPDoc img {
+        margin: 1rem 0;
+    }
 }
 
 /* 滚动条样式 - 熊猫主题 */
@@ -418,4 +482,33 @@
     font-size: 1.2em;
     opacity: 0.7;
     animation: pandaFloat 2s ease-in-out infinite;
+}
+
+/* 清除所有可能的背景色干扰 */
+.vp-doc img,
+.VPDoc img,
+.VPHero img,
+.VPNavBarTitle img,
+img {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+/* 图片容器背景清除 */
+.vp-doc p,
+.VPDoc p,
+.VPHero .image,
+.VPNavBarTitle {
+    background: transparent !important;
+}
+
+/* 确保图片在各种容器中都没有背景 */
+div img,
+p img,
+span img,
+a img {
+    background: transparent !important;
+    background-color: transparent !important;
 }
