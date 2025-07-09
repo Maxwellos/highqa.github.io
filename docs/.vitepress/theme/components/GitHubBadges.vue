@@ -2,35 +2,35 @@
   <div class="github-badges">
     <!-- GitHub Stars -->
     <img
-      src="https://img.shields.io/github/stars/PandaTestGrid/HighQAServer?style=for-the-badge&logo=github&logoColor=white"
+      src="https://img.shields.io/github/stars/PandaTestGrid/pandatestgrid.github.io?style=for-the-badge&logo=github&logoColor=white"
       alt="GitHub stars"
       loading="lazy"
     />
 
     <!-- GitHub Forks -->
     <img
-      src="https://img.shields.io/github/forks/PandaTestGrid/HighQAServer?style=for-the-badge&logo=github&logoColor=white"
+      src="https://img.shields.io/github/forks/PandaTestGrid/pandatestgrid.github.io?style=for-the-badge&logo=github&logoColor=white"
       alt="GitHub forks"
       loading="lazy"
     />
 
     <!-- GitHub Issues -->
     <img
-      src="https://img.shields.io/github/issues/PandaTestGrid/HighQAServer?style=for-the-badge&logo=github&logoColor=white"
+      src="https://img.shields.io/github/issues/PandaTestGrid/pandatestgrid.github.io?style=for-the-badge&logo=github&logoColor=white"
       alt="GitHub issues"
       loading="lazy"
     />
 
     <!-- License -->
     <img
-      src="https://img.shields.io/github/license/PandaTestGrid/HighQAServer?style=for-the-badge&logo=github&logoColor=white"
+      src="https://img.shields.io/github/license/PandaTestGrid/pandatestgrid.github.io?style=for-the-badge&logo=github&logoColor=white"
       alt="License"
       loading="lazy"
     />
 
     <!-- Last Commit -->
     <img
-      src="https://img.shields.io/github/last-commit/PandaTestGrid/HighQAServer?style=for-the-badge&logo=github&logoColor=white"
+      src="https://img.shields.io/github/last-commit/PandaTestGrid/pandatestgrid.github.io?style=for-the-badge&logo=github&logoColor=white"
       alt="Last commit"
       loading="lazy"
     />

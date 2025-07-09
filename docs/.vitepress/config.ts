@@ -7,8 +7,8 @@ export default defineConfig({
   lang: 'zh-CN',
   base: '/',
 
-  // 启用暗色模式切换
-  appearance: 'dark',
+  // 禁用主题切换按钮
+  appearance: false,
 
   // 忽略死链接检查（临时设置，建议后续修复）
   ignoreDeadLinks: true,
@@ -86,9 +86,7 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/PandaTestGrid/HighQAServer' }
-    ],
+    socialLinks: [],
 
     footer: {
       message: '版权所有 © 2024 PandaTest 云真机测试平台',

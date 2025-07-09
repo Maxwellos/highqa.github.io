@@ -2,7 +2,7 @@
   <div class="github-buttons">
     <!-- GitHub Star 按钮 -->
     <iframe
-      src="https://ghbtns.com/github-btn.html?user=PandaTestGrid&repo=HighQAServer&type=star&count=true&size=large"
+      src="https://ghbtns.com/github-btn.html?user=PandaTestGrid&repo=pandatestgrid.github.io&type=star&count=true&size=large"
       frameborder="0"
       scrolling="0"
       width="120"
@@ -12,7 +12,7 @@
 
     <!-- GitHub Fork 按钮 -->
     <iframe
-      src="https://ghbtns.com/github-btn.html?user=PandaTestGrid&repo=HighQAServer&type=fork&count=true&size=large"
+      src="https://ghbtns.com/github-btn.html?user=PandaTestGrid&repo=pandatestgrid.github.io&type=fork&count=true&size=large"
       frameborder="0"
       scrolling="0"
       width="120"
@@ -22,7 +22,7 @@
 
     <!-- GitHub Watch 按钮 -->
     <iframe
-      src="https://ghbtns.com/github-btn.html?user=PandaTestGrid&repo=HighQAServer&type=watch&count=true&size=large&v=2"
+      src="https://ghbtns.com/github-btn.html?user=PandaTestGrid&repo=pandatestgrid.github.io&type=watch&count=true&size=large&v=2"
       frameborder="0"
       scrolling="0"
       width="120"

@@ -220,15 +220,3 @@ a img {
     background: var(--vp-c-bg-alt);
     border-color: var(--vp-c-divider-light);
 }
-
-/* GitHub 链接样式优化 */
-a[href*="github.com"] {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-}
-
-a[href*="github.com"]:before {
-    content: "⭐";
-    font-size: 0.8em;
-}
