@@ -67,13 +67,13 @@ features:
 
 ---
 
-## 🌟 项目信息
+<div style="text-align: center; margin: 2rem 0;">
 
 <GitHubBadges />
 
 <GitHubButtons />
 
-<GitHubContributors />
+</div>
 
 ## 开始使用
 
@@ -83,3 +83,7 @@ features:
 - **[设备管理](/tutorials/device-management/device-list)** - 学习设备管理功能
 - **[群控管理](/tutorials/group-control/device-group-control)** - 掌握多设备控制技巧
 - **[自动化测试](/tutorials/automation-testing/automation-suite)** - 创建自动化测试套件
+
+---
+
+<GitHubContributors />
