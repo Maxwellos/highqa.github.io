@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'PandaTest',
   description: '云真机测试平台官方文档',
   lang: 'zh-CN',
-  base: '/highqa.github.io/',
+  base: '/pandatestgrid.github.io/',
 
   // 启用暗色模式切换
   appearance: 'dark',
@@ -14,14 +14,14 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/highqa.github.io/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/pandatestgrid.github.io/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     ['meta', { name: 'keywords', content: 'cloud testing, mobile testing, automation testing, vue, vuetify' }]
   ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/highqa.github.io/logo.png',
+    logo: '/pandatestgrid.github.io/logo.png',
     siteTitle: 'PandaTest',
 
     nav: [
@@ -74,7 +74,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Maxwellos/highqa.github.io' }
+      { icon: 'github', link: 'https://github.com/Maxwellos/pandatestgrid.github.io' }
     ],
 
     footer: {
@@ -107,7 +107,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/Maxwellos/highqa.github.io/edit/main/docs/:path',
+      pattern: 'https://github.com/Maxwellos/pandatestgrid.github.io/edit/main/docs/:path',
       text: '编辑此页'
     },
 
