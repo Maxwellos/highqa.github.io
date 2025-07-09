@@ -71,7 +71,6 @@ PandaTest 云真机测试平台是一个**持续开发中**的项目，具备完
 ## 联系我们
 
 ### 技术支持
-- **GitHub**：[https://github.com/Maxwellos](https://github.com/Maxwellos)
 - **邮箱**：通过 GitHub 个人资料联系
 - **在线演示**：本文档站点展示完整产品功能
 
