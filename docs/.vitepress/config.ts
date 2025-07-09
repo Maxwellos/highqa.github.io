@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'PandaTest',
   description: '云真机测试平台官方文档',
   lang: 'zh-CN',
-  base: '/',
+  base: '/highqa.github.io/',
 
   // 启用暗色模式切换
   appearance: 'dark',
@@ -14,14 +14,14 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/highqa.github.io/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     ['meta', { name: 'keywords', content: 'cloud testing, mobile testing, automation testing, vue, vuetify' }]
   ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/logo.png',
+    logo: '/highqa.github.io/logo.png',
     siteTitle: 'PandaTest',
 
     nav: [
