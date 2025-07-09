@@ -17,9 +17,6 @@
     --panda-gray: #95a5a6;
     --panda-light-gray: #ecf0f1;
     --panda-accent: #3498db;
-
-    /* 基础圆角 */
-    --panda-radius-xl: 24px;
 }
 
 /* 暗色主题适配 */
@@ -36,7 +33,6 @@
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
     background: linear-gradient(135deg, var(--panda-light-gray) 0%, rgba(236, 240, 241, 0.8) 30%, rgba(255, 255, 255, 0.9) 70%, var(--panda-white) 100%);
-    border-radius: var(--panda-radius-xl);
     margin: 2rem 0;
     padding: 3rem 2rem;
 }
