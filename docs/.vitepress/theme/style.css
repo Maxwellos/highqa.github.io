@@ -168,25 +168,12 @@ a img {
 .medium-zoom-overlay {
     background: var(--vp-c-bg) !important;
     opacity: 0.9;
-    z-index: 9999 !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
+    z-index: 2000 !important;
 }
 
 .medium-zoom-image--opened {
     cursor: zoom-out;
-    z-index: 10000 !important;
-    position: relative !important;
-}
-
-/* 确保放大时隐藏可能干扰的元素 */
-.medium-zoom--opened .VPSidebar,
-.medium-zoom--opened .VPNavBar,
-.medium-zoom--opened .VPLocalNav {
-    z-index: 1 !important;
+    z-index: 2001 !important;
 }
 
 /* 暗色主题下的优化 */
