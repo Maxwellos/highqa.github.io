@@ -34,13 +34,25 @@
     --panda-light-gray: #343a40;
 }
 
+/* 首页整体背景 */
+.Layout.is-home {
+    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
+    min-height: 100vh;
+}
+
+/* 首页内容容器 */
+.Layout.is-home .VPContent {
+    background: transparent;
+}
+
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
-    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: var(--panda-radius-xl);
     margin: 2rem 0;
     padding: 3rem 2rem;
     box-shadow: var(--panda-shadow-md);
+    backdrop-filter: blur(10px);
 }
 
 .VPHero .name {
@@ -77,6 +89,18 @@
 .VPHero .image img {
     background: transparent !important;
     border: none !important;
+}
+
+/* 功能卡片区域背景透明 */
+.VPFeatures {
+    background: transparent;
+}
+
+.VPFeature {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: var(--panda-radius-xl);
+    box-shadow: var(--panda-shadow-md);
 }
 
 /* 响应式设计 */
