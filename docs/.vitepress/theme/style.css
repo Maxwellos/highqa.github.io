@@ -30,20 +30,6 @@
     --panda-light-gray: #343a40;
 }
 
-/* 首页整体背景渐变 - 使用多个选择器确保覆盖 */
-.Layout.is-home,
-.Layout.is-home .VPContent,
-.Layout.is-home .vp-doc,
-body.is-home {
-    background: linear-gradient(135deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(236, 240, 241, 0.4) 75%, var(--panda-white) 100%) !important;
-    min-height: 100vh;
-}
-
-/* 确保整个文档区域也有背景 */
-.VPDoc {
-    background: linear-gradient(135deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(236, 240, 241, 0.4) 75%, var(--panda-white) 100%) !important;
-}
-
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
     background: linear-gradient(135deg, var(--panda-light-gray) 0%, rgba(236, 240, 241, 0.8) 30%, rgba(255, 255, 255, 0.9) 70%, var(--panda-white) 100%);
@@ -87,22 +73,70 @@ body.is-home {
     border: none !important;
 }
 
-/* 首页其他区域背景透明化 */
-.Layout.is-home .VPFeatures,
-.Layout.is-home .VPContent,
-.Layout.is-home .VPDoc {
-    background: transparent !important;
+/* 功能卡片区域 - 渐变背景 */
+.VPFeatures {
+    background: linear-gradient(45deg, var(--panda-white) 0%, rgba(255, 255, 255, 0.95) 25%, rgba(236, 240, 241, 0.8) 50%, rgba(255, 255, 255, 0.95) 75%, var(--panda-white) 100%);
+    padding: 3rem 2rem;
+    margin: 2rem 0;
 }
 
-/* 首页标题样式优化 */
-.VPDoc h2 {
+.VPFeature {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(236, 240, 241, 0.6) 50%, rgba(255, 255, 255, 0.8) 100%);
+    border: 1px solid rgba(236, 240, 241, 0.5);
+    transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(236, 240, 241, 0.8) 50%, rgba(255, 255, 255, 0.95) 100%);
+    border-color: var(--panda-accent);
+    transform: translateY(-2px);
+}
+
+/* 主页内容区域 - 渐变背景 */
+.vp-doc {
+    background: linear-gradient(180deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 30%, rgba(255, 255, 255, 0.8) 70%, var(--panda-white) 100%);
+}
+
+/* 产品展示区域 */
+.vp-doc h2 {
     background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.vp-doc h3 {
+    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+}
+
+/* 产品展示卡片 */
+.vp-doc div[style*="text-align: center"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(236, 240, 241, 0.6) 50%, rgba(255, 255, 255, 0.8) 100%);
+    padding: 2rem;
+    margin: 2rem auto;
+    border: 1px solid rgba(236, 240, 241, 0.5);
+    transition: all 0.3s ease;
+}
+
+.vp-doc div[style*="text-align: center"]:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(236, 240, 241, 0.8) 50%, rgba(255, 255, 255, 0.95) 100%);
+    transform: translateY(-2px);
+}
+
+/* 开始使用区域 */
+.vp-doc ul {
+    background: linear-gradient(135deg, rgba(236, 240, 241, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(236, 240, 241, 0.6) 100%);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid var(--panda-accent);
 }
 
 /* 按钮样式修复 - 确保暗色模式下正常显示 */
@@ -141,6 +175,16 @@ body.is-home {
 
     .VPHero .name {
         font-size: 2.5rem;
+    }
+
+    .VPFeatures {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .vp-doc div[style*="text-align: center"] {
+        padding: 1rem;
+        margin: 1rem auto;
     }
 }
 
