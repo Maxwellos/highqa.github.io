@@ -17,6 +17,10 @@
     --panda-gray: #95a5a6;
     --panda-light-gray: #ecf0f1;
     --panda-accent: #3498db;
+
+    /* 基础圆角和阴影 */
+    --panda-radius-xl: 24px;
+    --panda-shadow-md: 0 4px 16px rgba(44, 62, 80, 0.15);
 }
 
 /* 暗色主题适配 */
@@ -28,6 +32,63 @@
     --panda-white: #1a1a1a;
     --panda-gray: #6c757d;
     --panda-light-gray: #343a40;
+}
+
+/* 主页英雄区域 - 熊猫主题 */
+.VPHero {
+    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
+    border-radius: var(--panda-radius-xl);
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    box-shadow: var(--panda-shadow-md);
+}
+
+.VPHero .name {
+    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.VPHero .text {
+    color: var(--panda-gray);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.VPHero .tagline {
+    color: var(--panda-gray);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* 英雄区域图片优化 */
+.VPHero .image {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.VPHero .image img {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .VPHero {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .VPHero .name {
+        font-size: 2.5rem;
+    }
 }
 
 /* 清除图片背景色 */
