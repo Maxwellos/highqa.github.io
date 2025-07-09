@@ -35,14 +35,14 @@
 
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
-    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
+    background: linear-gradient(135deg, var(--panda-light-gray) 0%, rgba(236, 240, 241, 0.8) 30%, rgba(255, 255, 255, 0.9) 70%, var(--panda-white) 100%);
     border-radius: var(--panda-radius-xl);
     margin: 2rem 0;
     padding: 3rem 2rem;
 }
 
 .VPHero .name {
-    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
+    background: linear-gradient(135deg, var(--panda-black) 0%, rgba(44, 62, 80, 0.8) 50%, var(--panda-gray) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
