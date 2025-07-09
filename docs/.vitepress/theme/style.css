@@ -1,0 +1,421 @@
+/**
+ * PandaTest 熊猫主题样式
+ * 采用黑白配色方案，圆润设计，体现熊猫的可爱特征
+ */
+
+/* 全局变量 - 熊猫主题配色 */
+:root {
+    /* 熊猫主色调 */
+    --vp-c-brand-1: #2c3e50;
+    --vp-c-brand-2: #34495e;
+    --vp-c-brand-3: #7f8c8d;
+    --vp-c-brand-soft: rgba(44, 62, 80, 0.14);
+
+    /* 熊猫辅助色 */
+    --panda-black: #2c3e50;
+    --panda-white: #ffffff;
+    --panda-gray: #95a5a6;
+    --panda-light-gray: #ecf0f1;
+    --panda-accent: #3498db;
+
+    /* 圆角设计 */
+    --panda-radius-sm: 8px;
+    --panda-radius-md: 12px;
+    --panda-radius-lg: 16px;
+    --panda-radius-xl: 24px;
+
+    /* 阴影效果 */
+    --panda-shadow-sm: 0 2px 8px rgba(44, 62, 80, 0.1);
+    --panda-shadow-md: 0 4px 16px rgba(44, 62, 80, 0.15);
+    --panda-shadow-lg: 0 8px 32px rgba(44, 62, 80, 0.2);
+}
+
+/* 暗色主题适配 */
+.dark {
+    --vp-c-brand-1: #ffffff;
+    --vp-c-brand-2: #f8f9fa;
+    --vp-c-brand-3: #e9ecef;
+    --panda-black: #ffffff;
+    --panda-white: #1a1a1a;
+    --panda-gray: #6c757d;
+    --panda-light-gray: #343a40;
+}
+
+/* 主页英雄区域 - 熊猫主题 */
+.VPHero {
+    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
+    border-radius: var(--panda-radius-xl);
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    box-shadow: var(--panda-shadow-md);
+}
+
+.VPHero .name {
+    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.VPHero .text {
+    color: var(--panda-gray);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.VPHero .tagline {
+    color: var(--panda-gray);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* 按钮样式 - 熊猫主题 */
+.VPButton {
+    border-radius: var(--panda-radius-lg) !important;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--panda-shadow-sm);
+}
+
+.VPButton:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--panda-shadow-md);
+}
+
+.VPButton.brand {
+    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
+    border: none;
+    color: var(--panda-white);
+}
+
+.VPButton.alt {
+    background: var(--panda-white);
+    border: 2px solid var(--panda-light-gray);
+    color: var(--panda-black);
+}
+
+.VPButton.alt:hover {
+    background: var(--panda-light-gray);
+    border-color: var(--panda-gray);
+}
+
+/* 功能卡片 - 熊猫主题 */
+.VPFeature {
+    border-radius: var(--panda-radius-lg) !important;
+    border: 2px solid var(--panda-light-gray);
+    background: var(--panda-white);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--panda-shadow-sm);
+}
+
+.VPFeature:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--panda-shadow-lg);
+    border-color: var(--panda-accent);
+}
+
+.VPFeature .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.VPFeature .title {
+    color: var(--panda-black);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.VPFeature .details {
+    color: var(--panda-gray);
+    line-height: 1.6;
+}
+
+/* 导航栏 - 熊猫主题 */
+.VPNav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--panda-light-gray);
+}
+
+.VPNavBar {
+    border-radius: var(--panda-radius-md);
+    margin: 0.5rem 1rem;
+    padding: 0 1rem;
+    box-shadow: var(--panda-shadow-sm);
+}
+
+.VPNavBarTitle .title {
+    color: var(--panda-black);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* Logo 样式优化 */
+.VPNavBarTitle .logo {
+    border-radius: 50%;
+    box-shadow: var(--panda-shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.VPNavBarTitle .logo:hover {
+    transform: scale(1.1);
+    box-shadow: var(--panda-shadow-md);
+}
+
+/* 侧边栏 - 熊猫主题 */
+.VPSidebar {
+    background: var(--panda-white);
+    border-right: 1px solid var(--panda-light-gray);
+}
+
+.VPSidebarItem .text {
+    color: var(--panda-black);
+    font-weight: 500;
+    border-radius: var(--panda-radius-sm);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.VPSidebarItem .text:hover {
+    background: var(--panda-light-gray);
+    color: var(--panda-black);
+}
+
+.VPSidebarItem.active .text {
+    background: var(--panda-black);
+    color: var(--panda-white);
+}
+
+/* 内容区域 - 熊猫主题 */
+.VPContent {
+    background: var(--panda-white);
+}
+
+.VPDoc {
+    background: var(--panda-white);
+    border-radius: var(--panda-radius-lg);
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: var(--panda-shadow-sm);
+}
+
+/* 标题样式 - 熊猫主题 */
+.VPDoc h1 {
+    color: var(--panda-black);
+    font-weight: 800;
+    border-bottom: 3px solid var(--panda-accent);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.VPDoc h2 {
+    color: var(--panda-black);
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--panda-accent);
+}
+
+.VPDoc h3 {
+    color: var(--panda-gray);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* 代码块 - 熊猫主题 */
+.VPDoc div[class*="language-"] {
+    border-radius: var(--panda-radius-md);
+    border: 1px solid var(--panda-light-gray);
+    box-shadow: var(--panda-shadow-sm);
+    margin: 1rem 0;
+}
+
+.VPDoc pre {
+    border-radius: var(--panda-radius-md);
+    padding: 1.5rem;
+}
+
+/* 行内代码 */
+.VPDoc code {
+    background: var(--panda-light-gray);
+    color: var(--panda-black);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--panda-radius-sm);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* 引用块 - 熊猫主题 */
+.VPDoc blockquote {
+    border-left: 4px solid var(--panda-accent);
+    background: var(--panda-light-gray);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: var(--panda-radius-sm);
+    color: var(--panda-gray);
+}
+
+/* 表格 - 熊猫主题 */
+.VPDoc table {
+    border-radius: var(--panda-radius-md);
+    overflow: hidden;
+    box-shadow: var(--panda-shadow-sm);
+    margin: 1rem 0;
+}
+
+.VPDoc th {
+    background: var(--panda-black);
+    color: var(--panda-white);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.VPDoc td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--panda-light-gray);
+}
+
+.VPDoc tr:nth-child(even) {
+    background: var(--panda-light-gray);
+}
+
+/* 提示框 - 熊猫主题 */
+.custom-block {
+    border-radius: var(--panda-radius-md);
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    box-shadow: var(--panda-shadow-sm);
+}
+
+.custom-block.tip {
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+    border-left: 4px solid #52c41a;
+}
+
+.custom-block.warning {
+    background: linear-gradient(135deg, #fff7e6 0%, #fffbf0 100%);
+    border-left: 4px solid #faad14;
+}
+
+.custom-block.danger {
+    background: linear-gradient(135deg, #fff1f0 0%, #fff7f6 100%);
+    border-left: 4px solid #ff4d4f;
+}
+
+/* 页脚 - 熊猫主题 */
+.VPFooter {
+    background: var(--panda-black);
+    color: var(--panda-white);
+    border-radius: var(--panda-radius-lg) var(--panda-radius-lg) 0 0;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* 搜索框 - 熊猫主题 */
+.VPNavBarSearch .DocSearch-Button {
+    background: var(--panda-light-gray);
+    border: 1px solid var(--panda-gray);
+    border-radius: var(--panda-radius-lg);
+    color: var(--panda-black);
+    transition: all 0.3s ease;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+    background: var(--panda-white);
+    box-shadow: var(--panda-shadow-md);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .VPHero {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .VPHero .name {
+        font-size: 2.5rem;
+    }
+
+    .VPDoc {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .VPNavBar {
+        margin: 0.25rem 0.5rem;
+    }
+}
+
+/* 滚动条样式 - 熊猫主题 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--panda-light-gray);
+    border-radius: var(--panda-radius-sm);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--panda-gray);
+    border-radius: var(--panda-radius-sm);
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--panda-black);
+}
+
+/* 选择文本样式 */
+::selection {
+    background: var(--panda-accent);
+    color: var(--panda-white);
+}
+
+/* 加载动画 - 熊猫主题 */
+@keyframes pandaFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.panda-float {
+    animation: pandaFloat 3s ease-in-out infinite;
+}
+
+/* 为 logo 添加熊猫浮动效果 */
+.VPNavBarTitle .logo {
+    animation: pandaFloat 4s ease-in-out infinite;
+}
+
+/* 特殊的熊猫装饰元素 */
+.panda-decoration {
+    position: relative;
+}
+
+.panda-decoration::before {
+    content: "🐼";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 1.2em;
+    opacity: 0.7;
+    animation: pandaFloat 2s ease-in-out infinite;
+}
