@@ -18,9 +18,8 @@
     --panda-light-gray: #ecf0f1;
     --panda-accent: #3498db;
 
-    /* 基础圆角和阴影 */
+    /* 基础圆角 */
     --panda-radius-xl: 24px;
-    --panda-shadow-md: 0 4px 16px rgba(44, 62, 80, 0.15);
 }
 
 /* 暗色主题适配 */
@@ -34,25 +33,12 @@
     --panda-light-gray: #343a40;
 }
 
-/* 首页整体背景 */
-.Layout.is-home {
-    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
-    min-height: 100vh;
-}
-
-/* 首页内容容器 */
-.Layout.is-home .VPContent {
-    background: transparent;
-}
-
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
-    background: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, var(--panda-light-gray) 0%, var(--panda-white) 100%);
     border-radius: var(--panda-radius-xl);
     margin: 2rem 0;
     padding: 3rem 2rem;
-    box-shadow: var(--panda-shadow-md);
-    backdrop-filter: blur(10px);
 }
 
 .VPHero .name {
@@ -91,16 +77,31 @@
     border: none !important;
 }
 
-/* 功能卡片区域背景透明 */
-.VPFeatures {
-    background: transparent;
+/* 按钮样式修复 - 确保暗色模式下正常显示 */
+.VPButton {
+    transition: all 0.3s ease;
 }
 
-.VPFeature {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(5px);
-    border-radius: var(--panda-radius-xl);
-    box-shadow: var(--panda-shadow-md);
+.VPButton.brand {
+    background: var(--vp-c-brand-1) !important;
+    border: 1px solid var(--vp-c-brand-1) !important;
+    color: var(--vp-c-bg) !important;
+}
+
+.VPButton.brand:hover {
+    background: var(--vp-c-brand-2) !important;
+    border-color: var(--vp-c-brand-2) !important;
+}
+
+.VPButton.alt {
+    background: var(--vp-c-bg) !important;
+    border: 1px solid var(--vp-c-border) !important;
+    color: var(--vp-c-text-1) !important;
+}
+
+.VPButton.alt:hover {
+    background: var(--vp-c-bg-soft) !important;
+    border-color: var(--vp-c-brand-1) !important;
 }
 
 /* 响应式设计 */
