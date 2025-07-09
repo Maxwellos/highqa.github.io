@@ -30,10 +30,18 @@
     --panda-light-gray: #343a40;
 }
 
-/* 首页整体背景渐变 */
-.Layout.is-home {
-    background: linear-gradient(135deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(236, 240, 241, 0.4) 75%, var(--panda-white) 100%);
+/* 首页整体背景渐变 - 使用多个选择器确保覆盖 */
+.Layout.is-home,
+.Layout.is-home .VPContent,
+.Layout.is-home .vp-doc,
+body.is-home {
+    background: linear-gradient(135deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(236, 240, 241, 0.4) 75%, var(--panda-white) 100%) !important;
     min-height: 100vh;
+}
+
+/* 确保整个文档区域也有背景 */
+.VPDoc {
+    background: linear-gradient(135deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(236, 240, 241, 0.4) 75%, var(--panda-white) 100%) !important;
 }
 
 /* 主页英雄区域 - 熊猫主题 */
