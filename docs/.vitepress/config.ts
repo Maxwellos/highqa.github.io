@@ -25,54 +25,41 @@ export default defineConfig({
     siteTitle: 'High QA',
     
     nav: [
-      { text: '快速开始', link: '/getting-started' },
-      { text: '功能介绍', link: '/features/device-management' },
-      { text: '开发指南', link: '/development/architecture' },
-      { text: '部署指南', link: '/deployment-guide' },
+      { text: '使用教程', link: '/tutorials/' },
       { text: '关于', link: '/about' }
     ],
 
     sidebar: {
-      '/getting-started': [
+      '/tutorials/': [
         {
-          text: '快速开始',
+          text: '设备管理',
           collapsed: false,
           items: [
-            { text: '总览', link: '/getting-started' },
-            { text: '安装部署', link: '/getting-started/installation' },
-            { text: '基础配置', link: '/getting-started/configuration' },
-            { text: '本地开发', link: '/getting-started/development' }
+            { text: '设备列表管理', link: '/tutorials/device-management/device-list' },
+            { text: '设备调试功能', link: '/tutorials/device-management/device-debug' },
+            { text: '脚本录制与调试', link: '/tutorials/device-management/script-recording' }
           ]
-        }
-      ],
-      '/features/': [
+        },
         {
-          text: '核心功能',
+          text: '设备群控',
           collapsed: false,
           items: [
-            { text: '设备管理', link: '/features/device-management' },
-            { text: '远程控制', link: '/features/remote-control' },
-            { text: '自动化测试', link: '/features/automation' },
-            { text: '资源管理', link: '/features/resource-management' },
-            { text: '性能监控', link: '/features/performance' }
+            { text: '群控管理', link: '/tutorials/group-control/device-group-control' }
           ]
-        }
-      ],
-      '/development/': [
+        },
         {
-          text: '开发指南',
+          text: '脚本管理',
           collapsed: false,
           items: [
-            { text: '架构设计', link: '/development/architecture' }
+            { text: '测试及脚本', link: '/tutorials/script-management/test-scripts' },
+            { text: '测试用例', link: '/tutorials/script-management/test-cases' }
           ]
-        }
-      ],
-      '/deployment-guide': [
+        },
         {
-          text: '部署指南',
+          text: '自动化测试',
           collapsed: false,
           items: [
-            { text: 'GitHub Pages 部署', link: '/deployment-guide' }
+            { text: '自动化测试套件', link: '/tutorials/automation-testing/automation-suite' }
           ]
         }
       ]
@@ -83,8 +70,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '基于 Vue 3 + Vuetify 3 构建',
-      copyright: 'Copyright © 2024 High QA'
+      message: '版权所有 © 2024 High QA 云真机测试平台',
+      copyright: '保留所有权利'
     },
 
     search: {

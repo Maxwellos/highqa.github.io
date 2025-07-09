@@ -59,7 +59,7 @@ pnpm run build
 - 📖 [安装部署](/getting-started/installation) - 详细的安装和部署指南
 - ⚙️ [基础配置](/getting-started/configuration) - 平台配置说明
 - 🔧 [本地开发](/getting-started/development) - 开发环境搭建
-- 🚀 [功能介绍](/features/device-management) - 了解平台核心功能
+- 🚀 [功能介绍](/tutorials/core-features/device-management) - 了解平台核心功能
 
 ## 📋 环境要求
 
@@ -290,7 +290,7 @@ nvm use 20
 
 恭喜您成功启动了 High QA 平台！接下来您可以：
 
-- 📖 阅读 [功能介绍](/features/device-management) 了解更多功能
+- 📖 阅读 [功能介绍](/tutorials/core-features/device-management) 了解更多功能
 - 🔧 查看 [开发指南](/development/architecture) 学习如何扩展平台
 - 💬 加入我们的技术交流群获取支持
 - 🐛 在 [GitHub Issues](https://github.com/Maxwellos/highqa.github.io/issues) 反馈问题
