@@ -151,3 +151,34 @@ a img {
     background: transparent !important;
     background-color: transparent !important;
 }
+
+/* 图片点击放大功能样式 */
+.main img {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main img:hover {
+    transform: scale(1.02);
+}
+
+/* medium-zoom 样式优化 */
+.medium-zoom-overlay {
+    background: var(--vp-c-bg) !important;
+    opacity: 0.9;
+}
+
+.medium-zoom-image--opened {
+    cursor: zoom-out;
+}
+
+/* 暗色主题下的优化 */
+.dark .main img {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark .medium-zoom-overlay {
+    background: var(--vp-c-bg) !important;
+}

@@ -2,6 +2,9 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import mediumZoom from 'medium-zoom'
+import { onMounted, watch, nextTick } from 'vue'
+import { useRoute } from 'vitepress'
 
 export default {
   extends: DefaultTheme,
@@ -12,5 +15,22 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+  },
+  setup() {
+    const route = useRoute()
+    const initZoom = () => {
+      mediumZoom('.main img', {
+        background: 'var(--vp-c-bg)',
+        scrollOffset: 0,
+        margin: 24
+      })
+    }
+    onMounted(() => {
+      initZoom()
+    })
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    )
   }
 } 
