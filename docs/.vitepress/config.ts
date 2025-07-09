@@ -35,11 +35,12 @@ export default defineConfig({
           text: '设备管理',
           collapsed: false,
           items: [
-            { text: '设备列表管理', link: '/tutorials/device-management/device-list' },
-            { text: '设备调试功能', link: '/tutorials/device-management/device-debug' },
-            { text: '脚本录制与调试', link: '/tutorials/device-management/script-recording' }
+            { text: '设备列表', link: '/tutorials/device-management/device-list' },
+            { text: '设备调试', link: '/tutorials/device-management/device-debug' },
+            { text: '脚本录制', link: '/tutorials/device-management/script-recording' }
           ]
         },
+
         {
           text: '设备群控',
           collapsed: false,
@@ -48,10 +49,17 @@ export default defineConfig({
           ]
         },
         {
+          text: '应用管理',
+          collapsed: false,
+          items: [
+            { text: '应用管理', link: '/tutorials/app-management/' }
+          ]
+        },
+        {
           text: '脚本管理',
           collapsed: false,
           items: [
-            { text: '测试及脚本', link: '/tutorials/script-management/test-scripts' },
+            { text: '测试脚本', link: '/tutorials/script-management/test-scripts' },
             { text: '测试用例', link: '/tutorials/script-management/test-cases' }
           ]
         },
@@ -59,7 +67,7 @@ export default defineConfig({
           text: '自动化测试',
           collapsed: false,
           items: [
-            { text: '自动化测试套件', link: '/tutorials/automation-testing/automation-suite' }
+            { text: '测试套件', link: '/tutorials/automation-testing/automation-suite' }
           ]
         }
       ]

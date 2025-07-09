@@ -15,6 +15,8 @@
 
 ## 测试用例创建
 
+![脚本创建测试用例 - Git方式](../../assets/images/features/script-create-testcase-git.jpg)
+
 ### 用例基本信息
 
 创建测试用例时需要填写以下基本信息：
@@ -47,6 +49,8 @@
    - 记录异常情况和问题
 
 ### 用例模板
+
+![脚本创建测试用例 - 本地方式](../../assets/images/features/script-create-testcase-local.jpg)
 
 平台提供多种测试用例模板：
 

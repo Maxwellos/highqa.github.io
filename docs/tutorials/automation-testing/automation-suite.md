@@ -149,6 +149,8 @@
 
 ## 自动化测试执行
 
+![自动化测试套件执行详情](../../assets/images/features/automation-test-suite-execute-detail.jpg)
+
 ### 执行前准备
 
 1. **环境检查**：

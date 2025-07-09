@@ -16,7 +16,7 @@
     --panda-white: #ffffff;
     --panda-gray: #95a5a6;
     --panda-light-gray: #ecf0f1;
-    --panda-accent: #3498db;
+    --panda-accent: #95a1a9;
 }
 
 /* 暗色主题适配 */
@@ -32,10 +32,16 @@
 
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
-    background: linear-gradient(135deg, var(--panda-light-gray) 0%, rgba(236, 240, 241, 0.8) 30%, rgba(255, 255, 255, 0.9) 70%, var(--panda-white) 100%);
+    background: linear-gradient(0deg, var(--panda-white) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(236, 238, 238, 0.8) 70%, var(--panda-light-gray) 100%);
     margin: 2rem 0;
     padding: 3rem 2rem;
 }
+
+/* 暗黑主题下取消背景渐变 */
+.dark .VPHero {
+    background: transparent;
+}
+
 
 .VPHero .name {
     background: linear-gradient(135deg, var(--panda-black) 0%, rgba(44, 62, 80, 0.8) 50%, var(--panda-gray) 100%);
@@ -71,72 +77,12 @@
 .VPHero .image img {
     background: transparent !important;
     border: none !important;
+    filter: drop-shadow(0 0 25px rgba(44, 62, 80, 0.4)) drop-shadow(0 0 50px rgba(44, 62, 80, 0.2));
 }
 
-/* 功能卡片区域 - 渐变背景 */
-.VPFeatures {
-    background: linear-gradient(45deg, var(--panda-white) 0%, rgba(255, 255, 255, 0.95) 25%, rgba(236, 240, 241, 0.8) 50%, rgba(255, 255, 255, 0.95) 75%, var(--panda-white) 100%);
-    padding: 3rem 2rem;
-    margin: 2rem 0;
-}
-
-.VPFeature {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(236, 240, 241, 0.6) 50%, rgba(255, 255, 255, 0.8) 100%);
-    border: 1px solid rgba(236, 240, 241, 0.5);
-    transition: all 0.3s ease;
-}
-
-.VPFeature:hover {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(236, 240, 241, 0.8) 50%, rgba(255, 255, 255, 0.95) 100%);
-    border-color: var(--panda-accent);
-    transform: translateY(-2px);
-}
-
-/* 主页内容区域 - 渐变背景 */
-.vp-doc {
-    background: linear-gradient(180deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 30%, rgba(255, 255, 255, 0.8) 70%, var(--panda-white) 100%);
-}
-
-/* 产品展示区域 */
-.vp-doc h2 {
-    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 700;
-    margin: 3rem 0 2rem 0;
-    text-align: center;
-}
-
-.vp-doc h3 {
-    background: linear-gradient(135deg, var(--panda-black) 0%, var(--panda-gray) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 600;
-    margin: 2rem 0 1rem 0;
-}
-
-/* 产品展示卡片 */
-.vp-doc div[style*="text-align: center"] {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(236, 240, 241, 0.6) 50%, rgba(255, 255, 255, 0.8) 100%);
-    padding: 2rem;
-    margin: 2rem auto;
-    border: 1px solid rgba(236, 240, 241, 0.5);
-    transition: all 0.3s ease;
-}
-
-.vp-doc div[style*="text-align: center"]:hover {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(236, 240, 241, 0.8) 50%, rgba(255, 255, 255, 0.95) 100%);
-    transform: translateY(-2px);
-}
-
-/* 开始使用区域 */
-.vp-doc ul {
-    background: linear-gradient(135deg, rgba(236, 240, 241, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(236, 240, 241, 0.6) 100%);
-    padding: 2rem;
-    margin: 2rem 0;
-    border-left: 4px solid var(--panda-accent);
+/* 暗黑主题下图片光韵效果 */
+.dark .VPHero .image img {
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.3));
 }
 
 /* 按钮样式修复 - 确保暗色模式下正常显示 */
@@ -175,16 +121,6 @@
 
     .VPHero .name {
         font-size: 2.5rem;
-    }
-
-    .VPFeatures {
-        padding: 2rem 1rem;
-        margin: 1rem 0;
-    }
-
-    .vp-doc div[style*="text-align: center"] {
-        padding: 1rem;
-        margin: 1rem auto;
     }
 }
 

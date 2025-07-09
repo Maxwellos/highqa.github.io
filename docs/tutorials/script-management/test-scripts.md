@@ -1,5 +1,7 @@
 # 测试及脚本管理
 
+![脚本管理列表](../../assets/images/features/script-management-list.png)
+
 ## 测试脚本概述
 
 测试脚本是自动化测试的核心组件，PandaTest 平台提供了完整的脚本管理功能，帮助您创建、编辑、组织和执行测试脚本。
@@ -137,6 +139,8 @@
 - **通知设置**：配置执行结果的通知方式
 
 ## 脚本调试
+
+![脚本分析详情](../../assets/images/features/script-analysis-detail.jpg)
 
 ### 调试功能
 
