@@ -87,7 +87,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/PandaTestGrid/pandatestgrid.github.io' }
+      { icon: 'github', link: 'https://github.com/PandaTestGrid/HighQAServer' }
     ],
 
     footer: {

@@ -4,7 +4,7 @@
     <div class="contributors-grid">
       <!-- 通过GitHub API获取贡献者信息 -->
       <img
-        src="https://contrib.rocks/image?repo=PandaTestGrid/pandatestgrid.github.io"
+        src="https://contrib.rocks/image?repo=PandaTestGrid/HighQAServer"
         alt="GitHub Contributors"
         loading="lazy"
         @error="handleImageError"
@@ -14,7 +14,7 @@
       感谢所有为 PandaTest 项目做出贡献的开发者！
       <br />
       <a
-        href="https://github.com/PandaTestGrid/pandatestgrid.github.io/graphs/contributors"
+        href="https://github.com/PandaTestGrid/HighQAServer/graphs/contributors"
         target="_blank"
         rel="noopener"
       >
