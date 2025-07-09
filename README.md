@@ -1,11 +1,11 @@
-# High QA 云真机测试平台
+# PandaTest 云真机测试平台
 
 <p align="center">
   <img width="200" src="docs/public/logo.png">
 </p>
 
 <h1 align="center">
-    High QA
+    PandaTest
 <div align="center">
 
 ![VitePress](https://img.shields.io/badge/VitePress-1.x-646CFF?style=flat-square&logo=vite&logoColor=white)
@@ -19,7 +19,7 @@
 
 ## 📖 项目介绍
 
-这是 **High QA 云真机测试平台** 的官方文档网站，基于 VitePress 构建。文档详细介绍了云真机测试平台的功能特性、使用方法和最佳实践，为开发者和测试工程师提供全面的使用指南。
+这是 **PandaTest 云真机测试平台** 的官方文档网站，基于 VitePress 构建。文档详细介绍了云真机测试平台的功能特性、使用方法和最佳实践，为开发者和测试工程师提供全面的使用指南。
 
 该平台专为移动应用测试、远程演示和设备管理等场景设计，提供 iOS 和 Android 设备的远程访问、控制和管理功能。
 
@@ -67,9 +67,9 @@
 
 <div align="center">
 
-**📚 立即查看 High QA 使用文档！**
+**📚 立即查看 PandaTest 使用文档！**
 
-[在线文档](https://Maxwellos.github.io/) | [快速开始](https://Maxwellos.github.io/getting-started) | [使用教程](https://Maxwellos.github.io/tutorials/getting-started/quick-start)
+[在线文档](https://PandaTest.github.io/pandatest.github.io/) | [快速开始](https://PandaTest.github.io/pandatest.github.io/getting-started) | [使用教程](https://PandaTest.github.io/pandatest.github.io/tutorials/getting-started/quick-start)
 
 **如果这个项目对你有帮助，请给我们一个 ⭐️ Star！**
 

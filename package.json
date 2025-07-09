@@ -1,7 +1,7 @@
 {
-  "name": "highqa-docs",
+  "name": "pandatest-docs",
   "version": "1.0.0",
-  "description": "High QA 云真机测试平台官方文档",
+  "description": "PandaTest 云真机测试平台官方文档",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -15,7 +15,7 @@
     "vue",
     "vitepress"
   ],
-  "author": "High QA Team",
+  "author": "PandaTest Team",
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.36"
@@ -23,4 +23,4 @@
   "dependencies": {
     "vue": "^3.3.8"
   }
-} 
+}

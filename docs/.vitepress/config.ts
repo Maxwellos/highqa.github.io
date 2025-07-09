@@ -2,17 +2,17 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'High QA',
+  title: 'PandaTest',
   description: '云真机测试平台官方文档',
   lang: 'zh-CN',
-  base: '/highqa.github.io/',
-  
+  base: '/pandatest.github.io/',
+
   // 启用暗色模式切换
   appearance: 'dark',
-  
+
   // 忽略死链接检查（临时设置，建议后续修复）
   ignoreDeadLinks: true,
-  
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
@@ -22,8 +22,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
-    siteTitle: 'High QA',
-    
+    siteTitle: 'PandaTest',
+
     nav: [
       { text: '使用教程', link: '/tutorials/' },
       { text: '关于', link: '/about' }
@@ -66,11 +66,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Maxwellos/highqa.github.io' }
+      { icon: 'github', link: 'https://github.com/PandaTest/pandatest.github.io' }
     ],
 
     footer: {
-      message: '版权所有 © 2024 High QA 云真机测试平台',
+      message: '版权所有 © 2024 PandaTest 云真机测试平台',
       copyright: '保留所有权利'
     },
 
@@ -99,7 +99,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/Maxwellos/highqa.github.io/edit/main/docs/:path',
+      pattern: 'https://github.com/PandaTest/pandatest.github.io/edit/main/docs/:path',
       text: '编辑此页'
     },
 

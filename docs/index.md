@@ -1,16 +1,16 @@
 ---
-title: High QA 云真机测试平台
+title: PandaTest 云真机测试平台
 titleTemplate: 专业的移动应用测试解决方案
 description: 基于 Vue 3 和 Vuetify 3 构建的云真机测试平台，提供设备远程控制、自动化测试、资源管理等一站式移动应用测试解决方案
 layout: home
 
 hero:
-  name: "High QA"
+  name: "PandaTest"
   text: "云真机测试平台"
   tagline: "专业的移动应用测试解决方案"
   image:
     src: /logo.png
-    alt: High QA
+    alt: PandaTest
   actions:
     - theme: brand
       text: 快速开始

@@ -1,6 +1,6 @@
 # 快速开始
 
-欢迎使用 High QA 云真机测试平台！本指南将帮助您快速上手并开始使用我们的平台。
+欢迎使用 PandaTest 云真机测试平台！本指南将帮助您快速上手并开始使用我们的平台。
 
 ## 环境要求
 
@@ -15,8 +15,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/Maxwellos/highqa.github.io.git
-cd highqa.github.io
+git clone https://github.com/PandaTest/pandatest.github.io.git
+cd pandatest.github.io
 ```
 
 ### 2. 安装依赖
@@ -78,13 +78,13 @@ pnpm run build
 
 ```bash
 # 使用 HTTPS
-git clone https://github.com/Maxwellos/highqa.github.io.git
+git clone https://github.com/PandaTest/pandatest.github.io.git
 
 # 或使用 SSH
-git clone git@github.com:Maxwellos/highqa.github.io.git
+git clone git@github.com:PandaTest/pandatest.github.io.git
 
 # 进入项目目录
-cd highqa.github.io
+cd pandatest.github.io
 ```
 
 ### 2. 安装依赖
@@ -122,7 +122,7 @@ yarn dev
 
 ### 4. 访问应用
 
-打开浏览器访问 `http://localhost:3000`，您将看到 High QA 的主界面。
+打开浏览器访问 `http://localhost:3000`，您将看到 PandaTest 的主界面。
 
 ## ⚙️ 基础配置
 
@@ -138,7 +138,7 @@ VITE_API_BASE_URL=http://localhost:8080
 VITE_WS_BASE_URL=ws://localhost:8080
 
 # 应用标题
-VITE_APP_TITLE=High QA
+VITE_APP_TITLE=PandaTest
 
 # 启用调试模式
 VITE_DEBUG=true
@@ -288,21 +288,21 @@ nvm use 20
 
 ## 📚 下一步
 
-恭喜您成功启动了 High QA 平台！接下来您可以：
+恭喜您成功启动了 PandaTest 平台！接下来您可以：
 
 - 📖 阅读 [功能介绍](/tutorials/core-features/device-management) 了解更多功能
 - 🔧 查看 [开发指南](/development/architecture) 学习如何扩展平台
 - 💬 加入我们的技术交流群获取支持
-- 🐛 在 [GitHub Issues](https://github.com/Maxwellos/highqa.github.io/issues) 反馈问题
+- 🐛 在 [GitHub Issues](https://github.com/PandaTest/pandatest.github.io/issues) 反馈问题
 
 ## 🆘 获取帮助
 
 如果您在使用过程中遇到问题，可以通过以下方式获取帮助：
 
 - 📋 查看 [常见问题解答](/faq)
-- 📧 发送邮件到 support@highqa.com
+- 📧 发送邮件到 support@pandatest.com
 - 💬 加入 QQ 群：123456789
-- 🐛 在 GitHub 上提交 [Issue](https://github.com/Maxwellos/highqa.github.io/issues)
+- 🐛 在 GitHub 上提交 [Issue](https://github.com/PandaTest/pandatest.github.io/issues)
 
 ---
 
@@ -310,4 +310,4 @@ nvm use 20
 建议先在测试环境中熟悉平台功能，然后再部署到生产环境使用。
 :::
 
-准备好开始您的云真机测试之旅了吗？让我们继续探索 High QA 的强大功能！ 
+准备好开始您的云真机测试之旅了吗？让我们继续探索 PandaTest 的强大功能！ 
