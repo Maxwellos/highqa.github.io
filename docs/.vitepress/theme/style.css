@@ -30,6 +30,12 @@
     --panda-light-gray: #343a40;
 }
 
+/* 首页整体背景渐变 */
+.Layout.is-home {
+    background: linear-gradient(135deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(236, 240, 241, 0.4) 75%, var(--panda-white) 100%);
+    min-height: 100vh;
+}
+
 /* 主页英雄区域 - 熊猫主题 */
 .VPHero {
     background: linear-gradient(135deg, var(--panda-light-gray) 0%, rgba(236, 240, 241, 0.8) 30%, rgba(255, 255, 255, 0.9) 70%, var(--panda-white) 100%);
@@ -73,23 +79,11 @@
     border: none !important;
 }
 
-/* 首页功能区域背景 */
-.VPFeatures {
-    background: linear-gradient(45deg, var(--panda-white) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(236, 240, 241, 0.7) 50%, rgba(255, 255, 255, 0.9) 75%, var(--panda-white) 100%);
-    padding: 3rem 0;
-    margin: 2rem 0;
-}
-
-/* 首页内容区域背景 */
-.VPContent.is-home {
-    background: linear-gradient(180deg, var(--panda-white) 0%, rgba(236, 240, 241, 0.3) 50%, var(--panda-white) 100%);
-}
-
-/* 首页文档内容区域 */
-.VPDoc.has-aside {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(236, 240, 241, 0.5) 30%, rgba(255, 255, 255, 0.95) 70%, var(--panda-white) 100%);
-    padding: 2rem;
-    margin: 1rem 0;
+/* 首页其他区域背景透明化 */
+.Layout.is-home .VPFeatures,
+.Layout.is-home .VPContent,
+.Layout.is-home .VPDoc {
+    background: transparent !important;
 }
 
 /* 首页标题样式优化 */
@@ -139,16 +133,6 @@
 
     .VPHero .name {
         font-size: 2.5rem;
-    }
-
-    .VPFeatures {
-        padding: 2rem 0;
-        margin: 1rem 0;
-    }
-
-    .VPDoc.has-aside {
-        padding: 1rem;
-        margin: 0.5rem 0;
     }
 }
 
