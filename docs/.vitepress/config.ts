@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'PandaTest',
   description: '云真机测试平台官方文档',
   lang: 'zh-CN',
-  base: '/pandatest.github.io/',
+  base: '/',
 
   // 启用暗色模式切换
   appearance: 'dark',
@@ -74,7 +74,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/PandaTest/pandatest.github.io' }
+      { icon: 'github', link: 'https://github.com/Maxwellos/highqa.github.io' }
     ],
 
     footer: {
@@ -107,7 +107,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/PandaTest/pandatest.github.io/edit/main/docs/:path',
+      pattern: 'https://github.com/Maxwellos/highqa.github.io/edit/main/docs/:path',
       text: '编辑此页'
     },
 
