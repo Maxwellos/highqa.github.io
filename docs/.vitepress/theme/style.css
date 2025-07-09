@@ -184,3 +184,51 @@ a img {
 .dark .medium-zoom-overlay {
     background: var(--vp-c-bg) !important;
 }
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .main img {
+        max-width: 100%;
+        height: auto;
+        margin: 16px 0;
+    }
+
+    /* 移动端图片点击区域优化 */
+    .main img {
+        min-height: 44px;
+        /* 确保足够的点击区域 */
+    }
+
+    /* 移动端代码块优化 */
+    .vp-code-group {
+        font-size: 14px;
+    }
+}
+
+/* GitHub 组件优化 */
+.github-buttons iframe,
+.github-badges img {
+    margin: 4px;
+}
+
+/* 确保GitHub组件在所有主题下都有良好显示 */
+.dark .github-badges img {
+    filter: brightness(0.9);
+}
+
+.dark .github-contributors {
+    background: var(--vp-c-bg-alt);
+    border-color: var(--vp-c-divider-light);
+}
+
+/* GitHub 链接样式优化 */
+a[href*="github.com"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+a[href*="github.com"]:before {
+    content: "⭐";
+    font-size: 0.8em;
+}

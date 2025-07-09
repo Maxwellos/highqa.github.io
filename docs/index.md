@@ -67,6 +67,14 @@ features:
 
 ---
 
+## 🌟 项目信息
+
+<GitHubBadges />
+
+<GitHubButtons />
+
+<GitHubContributors />
+
 ## 开始使用
 
 准备好开始您的云真机测试之旅了吗？

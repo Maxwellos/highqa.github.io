@@ -13,6 +13,19 @@ export default defineConfig({
   // 忽略死链接检查（临时设置，建议后续修复）
   ignoreDeadLinks: true,
 
+  // Markdown 配置
+  markdown: {
+    // 代码行号
+    lineNumbers: true,
+    // 语法高亮主题
+    theme: {
+      light: 'github-light',
+      dark: 'github-dark'
+    },
+    // 代码组配置
+    codeTransformers: []
+  },
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],

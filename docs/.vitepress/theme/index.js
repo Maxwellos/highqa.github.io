@@ -5,6 +5,9 @@ import './style.css'
 import mediumZoom from 'medium-zoom'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
+import GitHubButtons from './components/GitHubButtons.vue'
+import GitHubBadges from './components/GitHubBadges.vue'
+import GitHubContributors from './components/GitHubContributors.vue'
 
 export default {
   extends: DefaultTheme,
@@ -14,7 +17,10 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // 注册全局组件
+    app.component('GitHubButtons', GitHubButtons)
+    app.component('GitHubBadges', GitHubBadges)
+    app.component('GitHubContributors', GitHubContributors)
   },
   setup() {
     const route = useRoute()
