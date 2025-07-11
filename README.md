@@ -16,7 +16,7 @@
 
 该平台专为移动应用测试、远程演示和设备管理等场景设计，提供 iOS 和 Android 设备的远程访问、控制和管理功能。
 
-<img width="200" src="docs/assets/images/features/device-script-recording.jpg">
+<img width="100%" src="docs/assets/images/features/device-script-recording.jpg">
 
 ## ✨ 平台特性
 
