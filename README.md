@@ -64,7 +64,7 @@
 
 **📚 立即查看 PandaTest 使用文档！**
 
-[在线文档](https://PandaTest.github.io/pandatest.github.io/) | [快速开始](https://PandaTest.github.io/pandatest.github.io/getting-started) | [使用教程](https://PandaTest.github.io/pandatest.github.io/tutorials/getting-started/quick-start)
+[官方网站](https://pandatestgrid.github.io/) | [使用教程](https://pandatestgrid.github.io/tutorials/)
 
 **如果这个项目对你有帮助，请给我们一个 ⭐️ Star！**
 
